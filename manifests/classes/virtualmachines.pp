@@ -7,6 +7,7 @@ class analyticallabs::virtualmachines{
     vcpus => 2,
     installopts => '--location http://de.archive.ubuntu.com/ubuntu --extra-args ks=http://analytical-labs.com/ks.cfg',
     console => false,
+    net => nat,
   }
   
   
