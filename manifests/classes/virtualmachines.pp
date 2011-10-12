@@ -5,7 +5,8 @@ class analyticallabs::virtualmachines{
     disksize => '100G',
     ram => '4096',
     vcpus => 2,
-    installopts => '--location http://download.fedoraproject.org/pub/fedora/linux/releases/10/Fedora/i386/os/ --extra-args ks=http://analytical-labs.com/ks.cfg',
+    installopts => '--location http://de.archive.ubuntu.com/ubuntu --extra-args ks=http://analytical-labs.com/ks.cfg',
+    console => false,
   }
   
   
