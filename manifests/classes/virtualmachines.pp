@@ -5,8 +5,7 @@ class analyticallabs::virtualmachines{
     disksize => '100G',
     ram => '4096',
     vcpus => 2,
-    installopts => '--location http://de.archive.ubuntu.com/ubuntu/dists/natty/main/installer-amd64/ --extra-args ks=http://analytical-labs.com/ks.cfg',
-    console => false,
+    ipaddr => '85.10.241.74'
   }
   
   
