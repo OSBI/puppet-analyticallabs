@@ -1,4 +1,4 @@
-class analyticallabs:saiku::control {
+class analyticallabs::saiku::control {
 
 	apache::module {"proxy_ajp":
   		ensure  => present,
