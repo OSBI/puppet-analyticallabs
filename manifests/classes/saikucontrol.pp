@@ -1,9 +1,7 @@
 class analyticallabs::saiku::control {
 
-	apache::module {"proxy_ajp":
-  		ensure  => present,
-	}
-
+	include apache::mod_proxy
+	
 	apache::vhost {"demo.analytical-labs.com":
   		ensure => present,
 	}
