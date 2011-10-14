@@ -8,8 +8,8 @@ class analyticallabs::artifactory {
 
 	artifactory::instance{ "repo":
 		ensure => present,
-		artifactory_ajp => $artifactory_http,
-		artifactory_http => $artifactory_ajp,
+		artifactory_ajp => $artifactory_ajp,
+		artifactory_http => $artifactory_http,
 		artifactory_server => $artifactory_server,
 	}
 
