@@ -37,7 +37,7 @@ class analyticallabs::saiku::control {
 	
 	saiku::instance{ "${saiku_tomcat_name}":
 		ensure => present,
-		tomcat_name => ${saiku_tomcat_name}, 
+		tomcat_name => "${saiku_tomcat_name}", 
 		tomcat_http => ${saiku_http},
 		tomcat_ajp => ${saiku_ajp}, 
 		tomcat_server => ${saiku_server},
