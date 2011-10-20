@@ -7,6 +7,7 @@ class analyticallabs::telemetry {
     }
 
     file { "/usr/lib/node_modules/telemetry/config.yaml" :
-        content => template("analyticallabs/telemetry_config.yaml.erb"),
+    	ensure => present,
+        content => template('analyticallabs/telemetry_config.yaml.erb'),
     }
 }
