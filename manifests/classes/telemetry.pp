@@ -1,4 +1,4 @@
-analyticallabs::telemetry {
+class analyticallabs::telemetry {
 	include nodejs
 	
 	exec { "install telemetry":
