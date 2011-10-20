@@ -1,5 +1,6 @@
 analyticallabs::telemetry {
-	include nodejs	
+	include nodejs
+	
 	exec { "install telemetry":
     	command => "npm install -g telemetry",
     	creates => "/usr/bin/telemetry",
