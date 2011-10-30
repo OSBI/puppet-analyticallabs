@@ -1,4 +1,5 @@
 class analyticallabs::websites::analyticallabs{
+	include apache
 	apache::vhost {"analytical-labs.com":
   		ensure => present,
 	}
