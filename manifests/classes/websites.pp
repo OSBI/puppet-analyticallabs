@@ -13,7 +13,6 @@ class analyticallabs::websites::analyticallabs{
         content => template('analyticallabs/vhost_htaccess.erb'),
     }
     
-    apache::module{ "rewrite": }
     
 }
 
