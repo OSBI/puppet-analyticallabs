@@ -1,8 +1,4 @@
 class analyticallabs::saiku::control {
-  include saiku::apt
-  include saiku::app
-  include saiku::data
-  include apache::mod_proxy
   $saiku_http			= extlookup('saiku_http','')
   $saiku_ajp			= extlookup('saiku_ajp','')
   $saiku_server		= extlookup('saiku_server','')
@@ -15,6 +11,10 @@ class analyticallabs::saiku::control {
   $saiku_dev_tomcat_name	= extlookup('saiku_dev_tomcat_name','')
   $saiku_dev_url			= extlookup('saiku_dev_url','')
 
+  include saiku::apt
+  include apache::mod_proxy
+  include saiku::data
+  
   apache::vhost {"${saiku_url}":
     ensure => present,
   }
