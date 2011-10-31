@@ -41,12 +41,12 @@ class saiku::data {
     tomcat_name => "saiku"
   }
 
-  saiku::datasource { "foodmart":
+  saiku::datasource { "foodmart_dev":
       ensure => absent,
       tomcat_name => "saikudev"
     }
     
-    saiku::datasource { "foodmart_mysql" :
+    saiku::datasource { "foodmart_mysql_dev" :
       ensure => present,
       tomcat_name => "saikudev"
     }
