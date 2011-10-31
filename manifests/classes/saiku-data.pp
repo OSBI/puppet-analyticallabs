@@ -30,16 +30,25 @@ class saiku::data {
     refreshonly => true,
     require => Mysql::Database["saikudemo"],
   }
-
-  $array = ['saiku', 'saikudev']
+    
   saiku::datasource { "foodmart":
     ensure => absent,
-    tomcat_name => $array
+    tomcat_name => "saiku"
   }
   
   saiku::datasource { "foodmart_mysql" :
     ensure => present,
-    tomcat_name => $array
+    tomcat_name => "saiku"
   }
+
+  saiku::datasource { "foodmart":
+      ensure => absent,
+      tomcat_name => "saikudev"
+    }
+    
+    saiku::datasource { "foodmart_mysql" :
+      ensure => present,
+      tomcat_name => "saikudev"
+    }
 
 }
