@@ -1,5 +1,7 @@
 class analyticallabs::saiku::control {
-
+  include saiku::apt
+  include saiku::app
+  include saiku::data
   include apache::mod_proxy
   $saiku_http			= extlookup('saiku_http','')
   $saiku_ajp			= extlookup('saiku_ajp','')
