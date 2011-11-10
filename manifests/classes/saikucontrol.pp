@@ -51,6 +51,6 @@ class analyticallabs::saiku::control {
     tomcat_http => "${saiku_dev_http}",
     tomcat_ajp => "${saiku_dev_ajp}", 
     tomcat_server => "${saiku_dev_server}",
-    app_name => saikudev,
+    app_name => "saikudev",
   }
 }
