@@ -31,28 +31,5 @@ class saiku::data {
     require => Mysql::Database["saikudemo"],
   }
     
-  saiku::datasource { "foodmart":
-    ensure => absent,
-    datasource_name => "foodmart",
-    tomcat_name => "saiku"
-  }
-  
-  saiku::datasource { "foodmart_mysql" :
-    ensure => present,
-    datasource_name => "foodmart_mysql",
-    tomcat_name => "saiku"
-  }
-
-  saiku::datasource { "foodmart_dev":
-      ensure => absent,
-      datasource_name => "foodmart",
-      tomcat_name => "saikudev"
-    }
-    
-    saiku::datasource { "foodmart_mysql_dev" :
-      ensure => present,
-      datasource_name => "foodmart_mysql_dev",
-      tomcat_name => "saikudev"
-    }
 
 }
