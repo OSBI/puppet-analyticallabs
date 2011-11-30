@@ -1,5 +1,5 @@
 class analyticallabs::helpdesk::control {
-  include mysql
+  include mysql::server
   apache::vhost {"helpdesk.meteoritehosting.com":
      ensure => present,
    }
