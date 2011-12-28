@@ -16,6 +16,13 @@ class analyticallabs::websites::analyticallabs{
 
 }
 
+class analyticallabs::websites::docs{
+
+  apache::vhost {"docs.analytical-labs.com":
+      ensure => present,
+  }
+
+}
 class analyticallabs::websites::meteorite{
   apache::vhost {"meteorite.bi":
     ensure => present,
