@@ -62,6 +62,9 @@ class analyticallabs::websites::saikuanalytics{
 }
 
   class analyticallabs::websites::sonar {
+    
+    include mysql::server
+
     apache::vhost {"sonar.analytical-labs.com":
       ensure => present,
     }
@@ -73,5 +76,17 @@ class analyticallabs::websites::saikuanalytics{
       url      => "http://localhost:9000/",
     }
 
+    mysql::database{"sonar":
+        ensure   => present,
+        require => Class["mysql::server"]
+      }
+  
+    mysql::rights{"sonar":
+      ensure   => present,
+      database => "sonar",
+      user     => "sonar",
+      password => "s0nAr",
+      require => Class["mysql::server"],
+    }
   }
 
