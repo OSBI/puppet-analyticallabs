@@ -59,6 +59,7 @@ class analyticallabs::websites::saikuanalytics{
     ensure => present,
     content => template('analyticallabs/vhost_htaccess.erb'),
   }
+}
 
   class analyticallabs::websites::sonar {
     apache::vhost {"sonar.analytical-labs.com":
@@ -66,12 +67,11 @@ class analyticallabs::websites::saikuanalytics{
     }
     
     apache::proxypass {"sonar":
-      ensure   => $ensure,
+      ensure   => present,
       location => "/",
       vhost    => "sonar.analytical-labs.com",
       url      => "http://localhost:9000/",
     }
 
   }
-}
 
