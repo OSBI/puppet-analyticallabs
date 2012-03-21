@@ -21,7 +21,7 @@
     "manifests/telemetry.pp": "a1e9562df4fbc16d3ff61e3ae275fb5c",
     "manifests/virtualmachines.pp": "e23a13f07da9688bb789a8a1ae9dc146",
     "manifests/websites.pp": "1489aa9af7e67155cfa40feaf4dadf24",
-    "manifests/zabbixclients.pp": "cd4aa1878f7040b3402103745f63edfe",
+    "manifests/zabbix/client.pp": "cd4aa1878f7040b3402103745f63edfe",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
     "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
     "templates/system.motd.erb": "1ab83db6a87d546cd5e9b0bfd747e2c7",
