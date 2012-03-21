@@ -12,7 +12,7 @@
     "README": "d41d8cd98f00b204e9800998ecf8427e",
     "lib/facter/memorysize_mb.rb": "d0a29f4b519a859d7d1736c16ff6a66d",
     "lib/facter/vhost.rb": "7ec088c1322e88762d27f23d4d43f6e6",
-    "manifests/artifactory/artifactory.pp": "5a86ad11b4e8ddbd9cee1d379e15df2a",
+    "manifests/artifactory.pp": "5a86ad11b4e8ddbd9cee1d379e15df2a",
     "manifests/helpdesk/control.pp": "88aa1e11d3189b0de444d13489b0c7b9",
     "manifests/init.pp": "183c6edd637d72257e8c42e9abf94423",
     "manifests/motd.pp": "887988836dd65c7fe5e3952c9acb8cf3",
