@@ -14,7 +14,7 @@
     "lib/facter/vhost.rb": "7ec088c1322e88762d27f23d4d43f6e6",
     "manifests/artifactory.pp": "5a86ad11b4e8ddbd9cee1d379e15df2a",
     "manifests/helpdesk.pp": "88aa1e11d3189b0de444d13489b0c7b9",
-    "manifests/init.pp": "9953faf7fc196ff1b55d2dfc2b2d18af",
+    "manifests/init.pp": "0f39d443729bd832d832623b4539b2ea",
     "manifests/motd.pp": "887988836dd65c7fe5e3952c9acb8cf3",
     "manifests/saiku-data.pp": "d4f9e6f0143eddd345267ca26ee2b070",
     "manifests/saikucontrol.pp": "291f6aa3da3ceb32b231a9b5f5c98e59",
