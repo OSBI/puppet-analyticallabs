@@ -1,4 +1,4 @@
-class saiku::data {
+class analyticallabs::saiku::data {
 
   include mysql::server
 

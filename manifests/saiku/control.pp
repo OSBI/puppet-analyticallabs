@@ -13,7 +13,7 @@ class analyticallabs::saiku::control {
 
   include saiku::apt
   include apache::mod_proxy
-  include saiku::data
+  include analyticallabs::saiku::data
   
   apache::vhost {"${saiku_url}":
     ensure => present,
