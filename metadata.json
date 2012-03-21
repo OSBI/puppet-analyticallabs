@@ -14,7 +14,6 @@
     "lib/facter/vhost.rb": "7ec088c1322e88762d27f23d4d43f6e6",
     "manifests/artifactory.pp": "5a86ad11b4e8ddbd9cee1d379e15df2a",
     "manifests/helpdesk.pp": "88aa1e11d3189b0de444d13489b0c7b9",
-    "manifests/init.pp": "0f39d443729bd832d832623b4539b2ea",
     "manifests/motd.pp": "887988836dd65c7fe5e3952c9acb8cf3",
     "manifests/saiku-data.pp": "d4f9e6f0143eddd345267ca26ee2b070",
     "manifests/saikucontrol.pp": "291f6aa3da3ceb32b231a9b5f5c98e59",
@@ -26,8 +25,7 @@
     "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
     "templates/system.motd.erb": "1ab83db6a87d546cd5e9b0bfd747e2c7",
     "templates/telemetry_config.yaml.erb": "130e09c43bddf60fee1235adefa1e5fd",
-    "templates/vhost_htaccess.erb": "42a33bd23cfae9d0f4ef2b7472f13463",
-    "tests/init.pp": "ca56771e231428457aca7b718b542a3f"
+    "templates/vhost_htaccess.erb": "42a33bd23cfae9d0f4ef2b7472f13463"
   },
   "dependencies": [
     {
