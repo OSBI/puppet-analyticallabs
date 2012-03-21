@@ -9,7 +9,7 @@
   "version": "1.0",
   "checksums": {
     "Modulefile": "a79c6515f0c84b67f88efb7a5fa9acdf",
-    "README": "d41d8cd98f00b204e9800998ecf8427e",
+    "README": "55397aee1a41e084f80125464e4c1d5b",
     "lib/facter/memorysize_mb.rb": "d0a29f4b519a859d7d1736c16ff6a66d",
     "lib/facter/vhost.rb": "7ec088c1322e88762d27f23d4d43f6e6",
     "manifests/artifactory.pp": "2c6d0ae600506f4811c002a54c5c4475",
