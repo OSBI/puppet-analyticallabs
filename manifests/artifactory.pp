@@ -1,6 +1,6 @@
 class analyticallabs::artifactory {
 
-  include artifactory
+  include ::artifactory
 
   $artifactory_http			= extlookup('artifactory_http','')
   $artifactory_ajp			= extlookup('artifactory_ajp','')
