@@ -15,7 +15,7 @@
     "manifests/artifactory.pp": "2c6d0ae600506f4811c002a54c5c4475",
     "manifests/helpdesk/control.pp": "88aa1e11d3189b0de444d13489b0c7b9",
     "manifests/init.pp": "183c6edd637d72257e8c42e9abf94423",
-    "manifests/motd.pp": "887988836dd65c7fe5e3952c9acb8cf3",
+    "manifests/motd.pp": "10146753dd6ea350375f0aa5791edf3d",
     "manifests/saiku/control.pp": "9465c4e367c44da759bdb90916521409",
     "manifests/saiku/data.pp": "7b961e0de6b05e543662a644e4652b13",
     "manifests/telemetry.pp": "a1e9562df4fbc16d3ff61e3ae275fb5c",

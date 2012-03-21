@@ -1,5 +1,5 @@
 class analyticallabs::motd {
-  include motd
+  include ::motd
 
   $puppet_server      = extlookup('puppet_server'      ,'puppet')
 
