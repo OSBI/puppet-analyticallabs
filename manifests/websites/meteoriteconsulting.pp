@@ -1,3 +1,15 @@
+# Class: analyticallabs::websites::meteoriteconsulting
+#
+# This module manages meteoriteconsulting websites
+#
+# Parameters:
+#
+# Actions:
+#
+# Requires:
+#
+# Sample Usage:
+#
 class analyticallabs::websites::meteoriteconsulting {
 	apache::vhost {
 		"meteoriteconsulting.com" :

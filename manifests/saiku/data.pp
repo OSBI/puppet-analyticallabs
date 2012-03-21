@@ -1,3 +1,15 @@
+# Class: analyticallabs::saiku::data 
+#
+# This module manages saiku databases
+#
+# Parameters:
+#
+# Actions:
+#
+# Requires:
+#
+# Sample Usage:
+#
 class analyticallabs::saiku::data {
 	include mysql::server 
 	

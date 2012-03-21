@@ -1,3 +1,15 @@
+# Class: analyticallabs::saiku::control
+#
+# This module manages Saiku tomcat, apache servers.
+#
+# Parameters:
+#
+# Actions:
+#
+# Requires:
+#
+# Sample Usage:
+#
 class analyticallabs::saiku::control {
 	$saiku_http = extlookup('saiku_http', '')
 	$saiku_ajp = extlookup('saiku_ajp', '')

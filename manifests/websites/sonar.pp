@@ -1,3 +1,15 @@
+# Class: analyticallabs::websites::sonar 
+#
+# This module manages Sonar install
+#
+# Parameters:
+#
+# Actions:
+#
+# Requires:
+#
+# Sample Usage:
+#
 class analyticallabs::websites::sonar {
 	include mysql::server 
 	

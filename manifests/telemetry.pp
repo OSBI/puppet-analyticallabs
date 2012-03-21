@@ -1,3 +1,15 @@
+# Class: analyticallabs::telemetry
+#
+# This module manages the Alabs telemetry server
+#
+# Parameters:
+#
+# Actions:
+#
+# Requires:
+#
+# Sample Usage:
+#
 class analyticallabs::telemetry {
 	include nodejs 
 	

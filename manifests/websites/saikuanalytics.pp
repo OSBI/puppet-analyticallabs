@@ -1,3 +1,16 @@
+# Class: analyticallabs::websites::saikuanalytics
+#
+# This module manages saikuanalytics websites
+#
+# Parameters:
+#
+# Actions:
+#
+# Requires:
+#
+# Sample Usage:
+#
+# [Remember: No empty lines between comments and class definition]
 class analyticallabs::websites::saikuanalytics {
 	apache::vhost {
 		"saikuanalytics.com" :

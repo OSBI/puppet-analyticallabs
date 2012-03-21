@@ -1,3 +1,16 @@
+# Class: analyticallabs::websites::analyticallabs
+#
+# This module manages analyticallabs websites
+#
+# Parameters:
+#
+# Actions:
+#
+# Requires:
+#
+# Sample Usage:
+#
+# [Remember: No empty lines between comments and class definition]
 class analyticallabs::websites::analyticallabs {
 	include apache apache::vhost {
 		"analytical-labs.com" :

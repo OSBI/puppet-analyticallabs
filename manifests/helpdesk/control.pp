@@ -1,3 +1,16 @@
+# Class: analyticallabs::helpdesk::control
+#
+# This module manages helpdesk module
+#
+# Parameters:
+#
+# Actions:
+#
+# Requires:
+#
+# Sample Usage:
+#
+# [Remember: No empty lines between comments and class definition]
 class analyticallabs::helpdesk::control {
 	include mysql::server apache::vhost {
 		"helpdesk.meteoritehosting.com" :

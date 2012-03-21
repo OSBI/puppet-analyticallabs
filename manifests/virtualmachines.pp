@@ -1,3 +1,15 @@
+# Class: analyticallabs::virtualmachines
+#
+# This module manages our xen virtual machines
+#
+# Parameters:
+#
+# Actions:
+#
+# Requires:
+#
+# Sample Usage:
+#
 class analyticallabs::virtualmachines {
 	xen::guest {
 		"ci2.analytical-labs.com" :
