@@ -32,17 +32,7 @@ class analyticallabs::saiku::controlssd {
 			vhost => "${saiku_url}",
 			url => "ajp://localhost:${saiku_ajp}/",
 	}
-	apache::vhost {
-		"${saiku_dev_url}" :
-			ensure => present,
-	}
-	apache::proxypass {
-		"${saiku_dev_tomcat_name}" :
-			ensure => present,
-			location => "/",
-			vhost => "${saiku_dev_url}",
-			url => "ajp://localhost:${saiku_dev_ajp}/",
-	}
+
 	
 	saiku::instance{ "${saiku_tomcat_name}":
     ensure => present,

@@ -17,7 +17,7 @@
     "manifests/init.pp": "183c6edd637d72257e8c42e9abf94423",
     "manifests/motd.pp": "21d03e5a96b884ef75ef97169c167e3a",
     "manifests/saiku/control.pp": "c497573db45e9a86e4e868c6b4e1da0d",
-    "manifests/saiku/controlssd.pp": "ff1f89a0e10585dbcd6bafecba5b9c28",
+    "manifests/saiku/controlssd.pp": "75a537e4b47f62a2519eefc973ec54b0",
     "manifests/saiku/data.pp": "86e353c06860cc92e2d71ef0eb2cee3e",
     "manifests/telemetry.pp": "5a2beea89f6d7a103f499adaed807810",
     "manifests/virtualmachines.pp": "7ab76916b8cd8d2bdbce3c07fe721496",
