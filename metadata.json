@@ -8,18 +8,18 @@
   "summary": "Analytical Lab Controller Module",
   "version": "1.0",
   "checksums": {
-    "Modulefile": "a79c6515f0c84b67f88efb7a5fa9acdf",
+    "Modulefile": "a89c633de45f3a45ed955f1fbb1446a8",
     "README": "55397aee1a41e084f80125464e4c1d5b",
     "lib/facter/memorysize_mb.rb": "d0a29f4b519a859d7d1736c16ff6a66d",
     "lib/facter/vhost.rb": "7ec088c1322e88762d27f23d4d43f6e6",
     "manifests/artifactory.pp": "549329f745fec983d872a5a666341316",
-    "manifests/helpdesk/control.pp": "448c9b70615796ca048dcaf9b771d239",
+    "manifests/helpdesk/control.pp": "7bb43be3eb5aed16ea3fc88981a5d7c7",
     "manifests/init.pp": "183c6edd637d72257e8c42e9abf94423",
     "manifests/motd.pp": "21d03e5a96b884ef75ef97169c167e3a",
     "manifests/saiku/control.pp": "c497573db45e9a86e4e868c6b4e1da0d",
     "manifests/saiku/data.pp": "86e353c06860cc92e2d71ef0eb2cee3e",
     "manifests/telemetry.pp": "5a2beea89f6d7a103f499adaed807810",
-    "manifests/virtualmachines.pp": "af1a9df2b800a9ec280b697a2a8ead32",
+    "manifests/virtualmachines.pp": "7ab76916b8cd8d2bdbce3c07fe721496",
     "manifests/websites/analyticallabs.pp": "3cba77228f3d56c97e9ea624103ff957",
     "manifests/websites/docs.pp": "31376d81114bd51ec30fb69cb912a3a7",
     "manifests/websites/meteorite.pp": "3c616207825bc45bf18bbb5021648cf8",
@@ -36,35 +36,39 @@
   "dependencies": [
     {
       "name": "Analytical Labs/artifactory",
-      "versionRequirement": "\u003d\u003d1.0"
+      "version_requirement": "\u003d\u003d1.0"
     },
     {
       "name": "Analytical Labs/mysql",
-      "versionRequirement": "\u003d\u003d1.0"
+      "version_requirement": "\u003d\u003d1.0"
     },
     {
       "name": "Analytical Labs/apache",
-      "versionRequirement": "\u003d\u003d1.0"
+      "version_requirement": "\u003d\u003d1.0"
     },
     {
       "name": "Analytical Labs/saiku",
-      "versionRequirement": "\u003d\u003d1.0"
+      "version_requirement": "\u003d\u003d1.0"
     },
     {
       "name": "Analytical Labs/motd",
-      "versionRequirement": "\u003d\u003d1.0"
+      "version_requirement": "\u003d\u003d1.0"
     },
     {
       "name": "Analytical Labs/xen",
-      "versionRequirement": "\u003d\u003d1.0"
+      "version_requirement": "\u003d\u003d1.0"
     },
     {
       "name": "Analytical Labs/zabbix",
-      "versionRequirement": "\u003d\u003d1.0"
+      "version_requirement": "\u003d\u003d1.0"
     },
     {
       "name": "Analytical Labs/nodejs",
-      "versionRequirement": "\u003d\u003d1.0"
+      "version_requirement": "\u003d\u003d1.0"
+    },
+    {
+      "name": "Analytical Labs/tomcat",
+      "version_requirement": "\u003d\u003d1.0"
     }
   ]
 }

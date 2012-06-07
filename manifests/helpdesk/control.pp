@@ -10,7 +10,6 @@
 #
 # Sample Usage:
 #
-# [Remember: No empty lines between comments and class definition]
 class analyticallabs::helpdesk::control {
 	include mysql::server apache::vhost {
 		"helpdesk.meteoritehosting.com" :
