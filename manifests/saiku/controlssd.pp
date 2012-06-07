@@ -16,11 +16,6 @@ class analyticallabs::saiku::controlssd {
 	$saiku_server = extlookup('saiku_server', '')
 	$saiku_tomcat_name = extlookup('saiku_tomcat_name', '')
 	$saiku_url = extlookup('saiku_url', '')
-	$saiku_dev_http = extlookup('saiku_dev_http', '')
-	$saiku_dev_ajp = extlookup('saiku_dev_ajp', '')
-	$saiku_dev_server = extlookup('saiku_dev_server', '')
-	$saiku_dev_tomcat_name = extlookup('saiku_dev_tomcat_name', '')
-	$saiku_dev_url = extlookup('saiku_dev_url', '')
 	
 	include saiku::apt 
 	include apache::mod_proxy 
