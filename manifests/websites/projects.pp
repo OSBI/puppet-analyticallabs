@@ -11,7 +11,7 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class analyticallabs::websites::starston {
+class analyticallabs::websites::projects {
 	apache::vhost {
 		"projects.analytical-labs.com" :
 			ensure => present,
