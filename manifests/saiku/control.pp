@@ -48,6 +48,12 @@ class analyticallabs::saiku::control {
 			vhost => "${saiku_dev_url}",
 			url => "ajp://localhost:${saiku_dev_ajp}/",
 	}
+	saiku::tomcat{ "$saiku_tomcat_name":
+  	ensure => present,
+  	tomcat_http => "${saiku_http}",
+    tomcat_ajp => "${saiku_ajp}", 
+    tomcat_server => "${saiku_server}",
+  	} ->
 	saiku::instance {
 		"${saiku_tomcat_name}" :
 			ensure => present,

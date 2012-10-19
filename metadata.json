@@ -16,7 +16,7 @@
     "manifests/helpdesk/control.pp": "7bb43be3eb5aed16ea3fc88981a5d7c7",
     "manifests/init.pp": "183c6edd637d72257e8c42e9abf94423",
     "manifests/motd.pp": "21d03e5a96b884ef75ef97169c167e3a",
-    "manifests/saiku/control.pp": "d0d78f31be1a2bab88af6ebf028c247f",
+    "manifests/saiku/control.pp": "7a4c46cbd0d07392e4119f16c2b57333",
     "manifests/saiku/controlssd.pp": "75a537e4b47f62a2519eefc973ec54b0",
     "manifests/saiku/data.pp": "86e353c06860cc92e2d71ef0eb2cee3e",
     "manifests/telemetry.pp": "5a2beea89f6d7a103f499adaed807810",
