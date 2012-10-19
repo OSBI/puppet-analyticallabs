@@ -57,5 +57,16 @@ class analyticallabs::saiku::control {
 	saiku::instance {
 		"${saiku_tomcat_name}" :
 			ensure => present,
+	}->
+	saiku::tomcat{ "$saiku_dev_tomcat_name":
+  	ensure => present,
+  	tomcat_http => "${saiku_dev_http}",
+    tomcat_ajp => "${saiku_dev_ajp}", 
+    tomcat_server => "${saiku_dev_server}",
+  	} ->
+	saiku::instance {
+		"${saiku_dev_tomcat_name}" :
+			ensure => present,
+			app_name => 'saikudev',
 	}
 }
