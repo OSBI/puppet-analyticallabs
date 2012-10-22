@@ -25,7 +25,7 @@
     "manifests/websites/docs.pp": "31376d81114bd51ec30fb69cb912a3a7",
     "manifests/websites/meteorite.pp": "3c616207825bc45bf18bbb5021648cf8",
     "manifests/websites/meteoriteconsulting.pp": "89e339532136359b7aa0965d3e5ce2da",
-    "manifests/websites/projects.pp": "4d553ab4ffdad8f1a0644ceaf41a3016",
+    "manifests/websites/projects.pp": "c14eca51b3ebe54d4079e34397b2958f",
     "manifests/websites/saikuanalytics.pp": "6e04f83eb7baee5a559794dc6037c36a",
     "manifests/websites/sonar.pp": "22b4288d5f97bd7136c60ce208880d4a",
     "manifests/websites/starston.pp": "396ebe26218663b299538614919bae07",
