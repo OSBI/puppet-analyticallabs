@@ -13,8 +13,12 @@
 class analyticallabs::helpdesk::control {
 	include mysql::server apache::vhost {
 		"helpdesk.meteoritehosting.com" :
-			ensure => present,
+			ensure => absent,
 	}
+	   apache::vhost{
+	   "helpdesk.meteorite.bi" :
+      ensure => present,
+  }
 	mysql::database {
 		"otrs" :
 			ensure => present,
