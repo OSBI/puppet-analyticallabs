@@ -11,6 +11,7 @@
 # Sample Usage:
 #
 class analyticallabs::websites::meteoriteconsulting {
+  include php::apache
 	apache::vhost {
 		"meteoriteconsulting.com" :
 			ensure => present,

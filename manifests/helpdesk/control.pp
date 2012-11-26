@@ -11,7 +11,8 @@
 # Sample Usage:
 #
 class analyticallabs::helpdesk::control {
-	include mysql::server apache::vhost {
+	include mysql::server
+	 apache::vhost {
 		"helpdesk.meteoritehosting.com" :
 			ensure => absent,
 	}
