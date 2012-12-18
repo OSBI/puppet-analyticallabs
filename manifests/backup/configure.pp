@@ -2,10 +2,6 @@
 
 class analyticallabs::backup::configure {
 
-  $ec2id = extlookup('ec2id', '')
-$ec2key = extlookup('ec2key', '')
-$s3destination = extlookup('s3destination', '')
-
 if($::hostname == "vhost"){
   class { "mysql::backup":}
 $backupfilelist = "/var/www/
