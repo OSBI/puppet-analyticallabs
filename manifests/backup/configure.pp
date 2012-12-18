@@ -31,7 +31,7 @@ class analyticallabs::backup::configure::dup{
   
 class {'duplicity':
       backup_action => 'backup',
-      file_dest => "$s3destination/$::hostname",
+      file_dest => "${s3destination}/$::hostname",
       access_id => "${ec2id}",
       secret_key =>"${ec2key}",
       backup_filelist => $backupfilelist,
