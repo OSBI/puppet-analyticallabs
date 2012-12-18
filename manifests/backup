@@ -1,6 +1,7 @@
   $backupfilelist = ""
 
 class analyticallabs::backup {
+include ::backup
   $ec2id = extlookup('ec2id', '')
 $ec2key = extlookup('ec2key', '')
 $s3destination = extlookup('s3destination', '')
