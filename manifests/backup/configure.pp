@@ -25,9 +25,9 @@ $backupfilelist = "/var/www
 
 class analyticallabs::backup::configure::dup{
    $ec2id = extlookup('ec2id', '')
-$ec2key = extlookup('ec2key', '')
-$s3destination = extlookup('s3destination', '')
- 
+   $ec2key = extlookup('ec2key', '')
+   $s3destination = extlookup('s3destination', '')
+   notify{"${s3destination}"}
 }
 
  file{ "/var/backups/":
