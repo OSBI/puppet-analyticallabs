@@ -26,9 +26,9 @@ $backupfilelist = "/var/www
 /var/backups
 }
 
-}
 
-}
+
+
 class analyticallabs::backup::configure::dup{
   
 class {'duplicity':
