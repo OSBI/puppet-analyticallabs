@@ -13,10 +13,13 @@
 # [Remember: No empty lines between comments and class definition]
 class analyticallabs::websites::starston {
 	apache::vhost {
-		"starston.analytical-labs.com" :
+		"starstonvillage.co.uk" :
 			ensure => present,
 }
-
+	apache::vhost {
+		"www.starstonvillage.co.uk" :
+			ensure => present,
+}
 
   mysql::database {
     "starston" :
