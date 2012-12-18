@@ -27,9 +27,6 @@ $backupfilelist = "/var/www
 /var/backups
 }
 
-
-
-
 class analyticallabs::backup::configure::dup{
   
 class {'duplicity':
@@ -44,10 +41,5 @@ class {'duplicity':
  file{ "/var/backups/":
 ensure=> "directory",
 }->
- file{"/var/backups/postgresql":
-ensure => "directory",
-}->
-notify{"list = $backupfilelist":}->
 class{'analyticallabs::backup::configure::dup':}
-
 }
