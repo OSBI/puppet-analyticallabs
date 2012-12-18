@@ -29,3 +29,24 @@ $backupfilelist = "/var/www
 }
 
 }
+class analyticallabs::backup::configure::dup{
+  
+class {'duplicity':
+      backup_action => 'backup',
+      file_dest => "${cloudbi::backup::configure::s3destination}/$::vhost",
+      access_id => "${cloudbi::backup::configure::ec2id}",
+      secret_key => "${cloudbi::backup::configure::ec2key}",
+      backup_filelist => $backupfilelist,
+    }
+}
+
+ file{ "/var/backups/":
+ensure=> "directory",
+}->
+ file{"/var/backups/postgresql":
+ensure => "directory",
+}->
+notify{"list = $backupfilelist":}->
+class{'analyticallabs::backup::configure::dup':}
+
+}
