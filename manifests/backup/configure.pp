@@ -1,7 +1,9 @@
   $backupfilelist = ""
 
 class analyticallabs::backup::configure {
-
+	$ec2id = extlookup('ec2id', '')
+	$ec2key = extlookup('ec2key', '')
+	$s3destination = extlookup('s3destination', '
 if($::hostname == "vhost"){
   class { "mysql::backup":}
 $backupfilelist = "/var/www/
@@ -24,10 +26,13 @@ $backupfilelist = "/var/www
 }
 
 class analyticallabs::backup::configure::dup{
-   $ec2id = extlookup('ec2id', '')
-   $ec2key = extlookup('ec2key', '')
-   $s3destination = extlookup('s3destination', '')
-   notify{${s3destination}}
+	class {'duplicity':
+		backup_action => 'backup',
+		file_dest => "${analyticallabs::backup::configure::s3destination}/${::hostname}",
+	        access_id => "${analyticallabs::backup::configure::ec2id}",
+	      	secret_key =>"${analyticallabs::backup::configure::ec2key}",
+		backup_filelist => $backupfilelist,
+    }
 }
 
  file{ "/var/backups/":
