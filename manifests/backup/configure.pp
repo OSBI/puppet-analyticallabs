@@ -20,7 +20,7 @@ $backupfilelist = "/var/www/
 if($::hostname == "webserver2"){
   class { "mysql::backup":}
 $backupfilelist = "/var/www
-/var/backups
+/var/backups"
 }
 
 class analyticallabs::backup::configure::dup{
