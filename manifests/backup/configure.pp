@@ -28,13 +28,6 @@ class analyticallabs::backup::configure::dup{
 $ec2key = extlookup('ec2key', '')
 $s3destination = extlookup('s3destination', '')
  
-#class {'duplicity':
-#      backup_action => 'backup',
-#      file_dest => "${s3destination}/$::hostname",
-#      access_id => "${ec2id}",
-#      secret_key =>"${ec2key}",
-#      backup_filelist => $backupfilelist,
-#    }
 }
 
  file{ "/var/backups/":
