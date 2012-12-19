@@ -15,8 +15,7 @@ $backupfilelist = "/var/www/
 if($::hostname == "utility"){
   class { "mysql::backup":}
 $backupfilelist = "/var/www/
-/var/backups
-/home/"
+/var/backups"
 }
 
 if($::hostname == "webserver2"){
